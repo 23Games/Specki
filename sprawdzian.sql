@@ -60,7 +60,8 @@ SELECT * FROM `dane` ORDER BY `nazwisko` ASC;
 SELECT *,(YEAR(CURDATE()) - YEAR(data_ur)) - (RIGHT(CURDATE(), 5) < RIGHT(data_ur, 5)) AS wiek FROM dane;
 
 
--- EMAILe, czyli zad 19 i 20
+-- 19
+select imie,nazwisko,email from dane where email like '%firma%';
 
 -- Zad 21
 CREATE TABLE IF NOT EXISTS `skrzynka`(
